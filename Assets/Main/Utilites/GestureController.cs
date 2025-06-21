@@ -33,22 +33,25 @@ public class GestureController : MonoBehaviour
 
             // Choose dominant gesture
             float absDist = Mathf.Abs(distDelta);
-            float absAngle = Mathf.Abs(angleDelta) * 2;
+            float absAngle = Mathf.Abs(angleDelta) * 4;
+            float absY = Mathf.Abs(centerYDelta);
 
-            if (absDist > absAngle)
+            if (absDist > absAngle && absDist > absY)
             {
                 // Pinch
                 float scaleChange = 1 + distDelta * zoomSpeed;
                 transform.localScale *= scaleChange;
             }
-            else if (absAngle > absDist)
+            else if (absAngle > absDist && absAngle > absY)
             {
                 // Twist
                 transform.Rotate(Vector3.up, - angleDelta * rotationSpeed, Space.World);
             }
-
-            // Drag Y
-            transform.position += centerYDelta * dragYSpeed * Vector3.up;
+            else if (absY > absDist && absY > absAngle)
+            {
+                // Drag Y
+                transform.position += centerYDelta * dragYSpeed * Vector3.up;
+            }
 
             prevDist = dist;
             prevAngle = angle;

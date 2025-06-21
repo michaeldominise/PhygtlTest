@@ -126,5 +126,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSpeed: 0.001
-  rotationSpeed: 0.5
-  dragYSpeed: 0.003
+  rotationSpeed: 2
+  dragYSpeed: 0.001
