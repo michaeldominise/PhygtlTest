@@ -21,5 +21,7 @@ public class GLTFHandler : MonoBehaviour
     {
         GLTFLoaderMessage.Instance.Show(false);
         GLTFSelection.Instance.Init(gltfMetadataList);
+        if (GLTFObjectLoader.Instance)
+            GLTFObjectLoader.Instance.Unload();
     }
 }
