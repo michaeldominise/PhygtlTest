@@ -17,5 +17,9 @@ public class GLTFHandler : MonoBehaviour
         Init();
     }
 
-    public void Init() => GLTFSelection.Instance.Init(gltfMetadataList);
+    public void Init()
+    {
+        GLTFLoaderMessage.Instance.Show(false);
+        GLTFSelection.Instance.Init(gltfMetadataList);
+    }
 }
