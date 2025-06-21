@@ -95,9 +95,9 @@ MonoBehaviour:
   m_Outline: {fileID: 2693936868997613681}
   m_ShowPlaneNormal: 0
   m_ShowTrackableId: 0
-  m_ShowClassifications: 1
-  m_ShowAlignment: 1
-  m_ShowTrackingState: 1
+  m_ShowClassifications: 0
+  m_ShowAlignment: 0
+  m_ShowTrackingState: 0
   m_TrackingTexture: {fileID: 2800000, guid: 6c886d9427aa34895a1d9c6d9d16c0aa, type: 3}
   m_TrackingMeshColor: {r: 0.36862743, g: 0.65882355, b: 1, a: 0.25490198}
   m_TrackingOutlineGradient:
@@ -338,7 +338,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.5277778
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -407,7 +407,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7384126549356014263
 RectTransform:
   m_ObjectHideFlags: 0
@@ -581,7 +581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6832895973720424399
 RectTransform:
   m_ObjectHideFlags: 0
